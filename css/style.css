@@ -742,11 +742,6 @@ section {
   flex-shrink: 0;
 }
 
-.servico-card:hover .icon {
-  background: var(--gradient-blue);
-  color: #fff;
-}
-
 .servico-card h3 {
   font-size: 1.12rem;
   font-weight: 700;
