@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NivelTI Soluções | Suporte Técnico, GLPI, Infraestrutura de TI e Websites</title>
   <meta name="description" content="A NivelTI Soluções oferece suporte técnico, implantação de GLPI, infraestrutura de TI e criação de websites para empresas que buscam mais estabilidade, organização e presença digital.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,13 +24,13 @@
         <img src="assets/niveltitecnologia-logo-transparent.png" alt="NivelTI Soluções" class="logo-image">
       </a>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#hero" onclick="closeMenu()">Início</a></li>
-        <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
-        <li><a href="#servicos" onclick="closeMenu()">Serviços</a></li>
-        <li><a href="#projetos" onclick="closeMenu()">Projetos</a></li>
-        <li><a href="#beneficios" onclick="closeMenu()">Benefícios</a></li>
-        <li><a href="#contato" onclick="closeMenu()">Contato</a></li>
-        <li><a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" class="btn-header"><i class="fab fa-whatsapp"></i> Falar com especialista</a></li>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-header"><i class="fab fa-whatsapp"></i> Falar com especialista</a></li>
       </ul>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
         <span></span>
@@ -52,7 +54,7 @@
         <p>Cuidamos do suporte técnico, da infraestrutura, da organização dos chamados e da presença digital para reduzir paradas, resolver problemas mais rápido e ajudar sua empresa a gerar mais contatos.</p>
         <div class="hero-tagline"><i class="fas fa-check-circle"></i> Problemas resolvidos &middot; Atendimento rápido &middot; Segurança &middot; Produtividade</div>
         <div class="hero-buttons">
-          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
           <a href="#servicos" class="btn-secondary"><i class="fas fa-arrow-down"></i> Conhecer soluções</a>
         </div>
       </div>
@@ -61,12 +63,12 @@
           <div class="hero-circle"></div>
           <div class="hero-circle"></div>
           <div class="hero-circle"></div>
-          <div class="hero-icon" style="top:8%;left:8%;"><i class="fas fa-desktop"></i></div>
-          <div class="hero-icon" style="top:4%;right:12%;"><i class="fas fa-headset"></i></div>
-          <div class="hero-icon" style="bottom:12%;left:6%;"><i class="fas fa-shield-alt"></i></div>
-          <div class="hero-icon" style="bottom:8%;right:8%;"><i class="fas fa-wifi"></i></div>
-          <div class="hero-icon" style="top:38%;right:0;"><i class="fab fa-whatsapp"></i></div>
-          <div class="hero-icon" style="top:32%;left:0;"><i class="fas fa-network-wired"></i></div>
+          <div class="hero-icon hero-icon-desktop"><i class="fas fa-desktop"></i></div>
+          <div class="hero-icon hero-icon-headset"><i class="fas fa-headset"></i></div>
+          <div class="hero-icon hero-icon-shield"><i class="fas fa-shield-alt"></i></div>
+          <div class="hero-icon hero-icon-wifi"><i class="fas fa-wifi"></i></div>
+          <div class="hero-icon hero-icon-whatsapp"><i class="fab fa-whatsapp"></i></div>
+          <div class="hero-icon hero-icon-network"><i class="fas fa-network-wired"></i></div>
           <div class="hero-float-card">
             <div class="fc-icon"><i class="fas fa-laptop"></i></div>
             <div class="fc-text">Suporte para computadores,<br>internet, sistemas e acessos</div>
@@ -136,25 +138,25 @@
           <div class="icon"><i class="fas fa-headset"></i></div>
           <h3>Suporte Técnico para empresas</h3>
           <p>Resolvemos problemas do dia a dia com computadores, notebooks, sistemas, e-mails, impressoras, acessos e rede, para sua equipe não perder produtividade.</p>
-          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20de%20Suporte%20T%C3%A9cnico%20para%20minha%20empresa" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar atendimento</a>
+          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20de%20Suporte%20T%C3%A9cnico%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar atendimento</a>
         </div>
         <div class="servico-card reveal reveal-delay-1">
           <div class="icon"><i class="fas fa-server"></i></div>
           <h3>Infraestrutura de TI organizada</h3>
           <p>Cuidamos da base tecnológica da empresa, como rede, internet, servidores, compartilhamentos, permissões, backup e segurança.</p>
-          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20falar%20sobre%20Infraestrutura%20de%20TI%20para%20minha%20empresa" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar atendimento</a>
+          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20falar%20sobre%20Infraestrutura%20de%20TI%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar atendimento</a>
         </div>
         <div class="servico-card reveal reveal-delay-2">
           <div class="icon"><i class="fas fa-ticket-alt"></i></div>
           <h3>GLPI e gestão de chamados</h3>
           <p>Implantamos e organizamos o GLPI para controlar chamados, atendimentos, equipamentos, prioridades e relatórios de suporte.</p>
-          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20falar%20sobre%20GLPI%20e%20gest%C3%A3o%20de%20chamados%20para%20minha%20empresa" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar atendimento</a>
+          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20falar%20sobre%20GLPI%20e%20gest%C3%A3o%20de%20chamados%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar atendimento</a>
         </div>
         <div class="servico-card reveal reveal-delay-3">
           <div class="icon"><i class="fas fa-globe"></i></div>
           <h3>Criação de Websites</h3>
           <p>Desenvolvemos sites institucionais e landing pages profissionais para empresas que precisam apresentar seus serviços, fortalecer sua presença digital e gerar mais contatos pelo WhatsApp.</p>
-          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar criação de site</a>
+          <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar criação de site</a>
         </div>
       </div>
     </div>
@@ -169,7 +171,7 @@
       <div class="projetos-cta reveal">
         <h3>Sua empresa precisa organizar atendimentos, processos internos ou presença digital?</h3>
         <p>Fale com a NivelTI e descubra a melhor solução para o seu negócio.</p>
-        <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20falar%20sobre%20um%20projeto%20de%20GLPI%2C%20CSC%2C%20central%20de%20atendimento%20ou%20cria%C3%A7%C3%A3o%20de%20website%20para%20minha%20empresa" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Falar sobre meu projeto</a>
+        <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20falar%20sobre%20um%20projeto%20de%20GLPI%2C%20CSC%2C%20central%20de%20atendimento%20ou%20cria%C3%A7%C3%A3o%20de%20website%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fab fa-whatsapp"></i> Falar sobre meu projeto</a>
       </div>
     </div>
   </section>
@@ -305,7 +307,7 @@
       <h2>Sua empresa precisa de soluções em <span>TI</span>?</h2>
       <p>Fale com a NivelTI Soluções e veja como podemos ajudar sua empresa a trabalhar com mais segurança, organização, produtividade e presença digital profissional.</p>
       <div class="cta-phone"><i class="fab fa-whatsapp"></i> WhatsApp: (85) 9 9796-1151</div>
-      <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Chamar agora no WhatsApp</a>
+      <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fab fa-whatsapp"></i> Chamar agora no WhatsApp</a>
     </div>
   </section>
 
@@ -360,7 +362,7 @@
             <div class="icon"><i class="fab fa-whatsapp"></i></div>
             <div class="info">
               <strong>WhatsApp</strong>
-              <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank">(85) 9 9796-1151</a>
+              <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer">(85) 9 9796-1151</a>
             </div>
           </div>
           <div class="contato-item">
@@ -374,7 +376,7 @@
             <div class="icon"><i class="fab fa-instagram"></i></div>
             <div class="info">
               <strong>Instagram</strong>
-              <a href="https://www.instagram.com/niveltitecnologia/" target="_blank">@niveltitecnologia</a>
+              <a href="https://www.instagram.com/niveltitecnologia/" target="_blank" rel="noopener noreferrer">@niveltitecnologia</a>
             </div>
           </div>
         </div>
@@ -407,7 +409,7 @@
           <div class="contato-item">
             <div class="icon"><i class="fab fa-whatsapp"></i></div>
             <div class="info">
-              <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank">(85) 9 9796-1151</a>
+              <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer">(85) 9 9796-1151</a>
             </div>
           </div>
           <div class="contato-item">
@@ -419,7 +421,7 @@
           <div class="contato-item">
             <div class="icon"><i class="fab fa-instagram"></i></div>
             <div class="info">
-              <a href="https://www.instagram.com/niveltitecnologia/" target="_blank">@niveltitecnologia</a>
+              <a href="https://www.instagram.com/niveltitecnologia/" target="_blank" rel="noopener noreferrer">@niveltitecnologia</a>
             </div>
           </div>
         </div>
@@ -431,9 +433,9 @@
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <a href="https://wa.me/5585997961151?text=Ol%C3%A1%2C%20NivelTI%21%20Gostaria%20de%20solicitar%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>

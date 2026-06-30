@@ -12,6 +12,10 @@ function closeMenu() {
   navMenu.classList.remove('active');
 }
 
+navMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
 // Header scroll effect
 const header = document.getElementById('header');
 
@@ -50,16 +54,25 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  const nome = document.getElementById('nome').value;
-  const empresa = document.getElementById('empresa').value;
-  const servico = document.getElementById('servico').value;
-  const whatsapp = document.getElementById('whatsapp').value;
-  const email = document.getElementById('email').value;
-  const mensagem = document.getElementById('mensagem').value;
+  const nome = document.getElementById('nome').value.trim();
+  const empresa = document.getElementById('empresa').value.trim();
+  const servico = document.getElementById('servico').value.trim();
+  const whatsapp = document.getElementById('whatsapp').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const mensagem = document.getElementById('mensagem').value.trim();
 
-  const servicoText = servico ? `Serviço: ${servico}` : '';
+  const lines = [
+    'Olá, NivelTI!',
+    '',
+    `*Nome:* ${nome}`,
+    `*Empresa:* ${empresa || 'N/A'}`,
+    ...(servico ? [`*Serviço:* ${servico}`] : []),
+    `*WhatsApp:* ${whatsapp}`,
+    `*E-mail:* ${email}`,
+    `*Mensagem:* ${mensagem}`
+  ];
 
-  const text = `Olá, NivelTI!%0A%0A*Nome:* ${encodeURIComponent(nome)}%0A*Empresa:* ${encodeURIComponent(empresa || 'N/A')}%0A${servico ? `*Serviço:* ${encodeURIComponent(servico)}%0A` : ''}*WhatsApp:* ${encodeURIComponent(whatsapp)}%0A*E-mail:* ${encodeURIComponent(email)}%0A*Mensagem:* ${encodeURIComponent(mensagem)}`;
+  const params = new URLSearchParams({ text: lines.join('\n') });
 
-  window.open(`https://wa.me/5585997961151?text=${text}`, '_blank');
+  window.open(`https://wa.me/5585997961151?${params.toString()}`, '_blank', 'noopener,noreferrer');
 });
